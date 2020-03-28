@@ -10,7 +10,7 @@ public class ResizeableTest {
         resizeables[1] = new Rectangle(14.1, 17.6);
         resizeables[2] = new Square(17.6);
 
-        System.out.println("After-resized:");
+        System.out.println("After - resized:");
         for (Resizeable resizeable : resizeables) {
             resizeable.resize(percent);
         }
@@ -19,12 +19,10 @@ public class ResizeableTest {
         shapes[1] = (Rectangle) resizeables[1];
         shapes[2] = (Square) resizeables[2];
 
-        System.out.println("Pre-resized:");
+        System.out.println("Pre - resized:");
         for (Shape shape : shapes) {
             System.out.println(shape);
         }
-
-
     }
 }
 

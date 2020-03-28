@@ -30,24 +30,13 @@ public class Square extends Rectangle implements Resizeable {
         setSide(length);
     }
 
-//    @Override
-//    public String toString() {
-//        return "A Square with side = "
-//                + getSide()
-//                + " has area = "
-//                + super.getArea()
-//                + " and perimeter = "
-//                + super.getPerimeter()
-//                + " ,which is a subclass of "
-//                + super.toString();
-//    }
-@Override
-public String toString() {
-    return "A Square with Side = "
-            + getSide()
-            + " ,Which is a Subclass of "
-            + super.toString();
-}
+    @Override
+    public String toString() {
+        return "A Square with Side = "
+                + getSide()
+                + " ,Which is a Subclass of "
+                + super.toString();
+    }
 
     public void resize(double percent) {
         double newSide = getSide() * (percent/100 + 1);

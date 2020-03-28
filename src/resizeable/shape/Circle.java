@@ -43,7 +43,6 @@ public class Circle extends Shape implements Resizeable{
                 + super.toString();
 }
 
-
     public void resize(double percent) {
         double newRadius = getRadius() * (percent/100 + 1);
         System.out.println("New radius of Circle = " + newRadius);
